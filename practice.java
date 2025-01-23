@@ -73,10 +73,6 @@ public class practice {
             }
         }
     }
-
-
-
-    
     public static void main(String[] args) {
         int v = 7;
 
@@ -87,6 +83,5 @@ public class practice {
         System.out.println(" ");
 
         bfs(graph, v);
-
     }
 }
