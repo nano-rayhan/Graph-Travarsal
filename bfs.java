@@ -1,10 +1,7 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-
-
 public class bfs {
-
     static class Edge{
         int src;
         int dest;
@@ -14,7 +11,6 @@ public class bfs {
             this.dest = d;
         }
     }
-
     public static void createGraph(ArrayList<Edge> graph[]){
         for(int i=0; i<graph.length; i++){
             graph[i] = new ArrayList<Edge>();
@@ -62,7 +58,6 @@ public class bfs {
             }           
         }
     }
-
     public static void dfs(ArrayList<Edge> graph[], int  curr, boolean vis[]){
         System.out.println(curr+ " ");
         vis[curr] = true;
@@ -73,9 +68,7 @@ public class bfs {
                 dfs(graph, e.dest, vis);
             }
         }
-    }
-
-    
+    } 
     public static void main(String[] args) {
         int v = 7;
 
@@ -84,7 +77,6 @@ public class bfs {
         createGraph(graph);
         boolean vis[] = new boolean[v];
         dfs(graph, 0, vis);
-
         //bfss(graph, v);
     }
 }

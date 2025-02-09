@@ -8,7 +8,6 @@ public class dij {
         int src;
         int dest;
         int wt;
-
         public Edge(int s, int d, int w){
                 this.src = s;
                 this.dest = d;
@@ -83,12 +82,6 @@ public class dij {
             }
             System.out.println();
         }
-    
-        
-    
-
-
-    
     public static void main(String[] args) {
          
         int v = 6;
@@ -98,10 +91,5 @@ public class dij {
         createGraph(graph);
 
         dijktra(graph, 0, v);
-
-    }
-        
-        
-        
-            
+    }           
 }
